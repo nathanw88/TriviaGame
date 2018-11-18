@@ -189,7 +189,10 @@ function newQuestion() {
   });
 }
 
-$("#start").on("click", function() {
+$(".start").on("click", function() {
+  console.log($(this).attr("id"));
+  choiceCategory = $(this).attr("id");
+
   // console.log("works");
   newQuestion();
 });
