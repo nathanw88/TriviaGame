@@ -28,22 +28,34 @@
       <br />
       <br />
       <br />
-      <div class="inner-container">
+      <div class="inner-container" id="start-container">
         <button id="start"><h2>start!</h2></button>
-        <!--
-          <p id="timer">time remaining</p>
+      </div>
+      <div class="inner-container" id="result-container">
+        <div>
+          <h1 id="result"></h1>
           <br />
-          <p>Question?</p>
+          <h3 id="correct"></h3>
           <br />
+          <h3 id="incorrect"></h3>
           <br />
-          <section class="answer" id="answer-1">answer</section>
+          <h3 id="unanswered"></h3>
+          <button id="restart">Restart!</button>
+        </div>
+      </div>
+      <div class="inner-container" id="question-container">
+        <p id="timer">Time remaining: 30</p>
+        <div>
+          <p id="question"></p>
           <br />
-          <section class="answer" id="answer-2">answer</section>
+          <h3 class="answer" data-answer="false" id="answer1"></h3>
           <br />
-          <section class="answer" id="answer-3">answer</section>
+          <h3 class="answer" data-answer="false" id="answer2"></h3>
           <br />
-          <section class="answer" id="answer-4">answer</section>
-        -->
+          <h3 class="answer" data-answer="false" id="answer3"></h3>
+          <br />
+          <h3 class="answer" data-answer="false" id="answer4"></h3>
+        </div>
       </div>
     </div>
   </body>

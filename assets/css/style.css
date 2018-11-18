@@ -80,3 +80,9 @@ button {
   width: 15%;
   background-color: #99a;
 }
+.button {
+  width: auto;
+  margin: 3px 30% 0px 30%;
+  height: 5%;
+  background-color: #99a;
+}
