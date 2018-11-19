@@ -50,7 +50,7 @@ body {
     );
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-  color: darkgrey;
+  color: #3bff0d;
 }
 .answer {
   font-size: 20px;
@@ -84,5 +84,9 @@ button {
   width: auto;
   margin: 3px 30% 0px 30%;
   height: 5%;
-  background-color: #99a;
+  background-color: #f00000;
+}
+img {
+  width: 200px;
+  height: 200px;
 }
