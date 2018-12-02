@@ -9,3 +9,5 @@ runs through the ten questions one at a time, letting you know if you guessed co
 with a 30 second timer for each question, when it ends tells you the correct answer.
 
 at the end lets you know how many incorrect, correct, and unanswered questions the user had, then shows a restart button to start the game over.
+
+The live link: https://nathanw88.github.io/TriviaGame/
