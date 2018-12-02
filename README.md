@@ -11,3 +11,5 @@ with a 30 second timer for each question, when it ends tells you the correct ans
 at the end lets you know how many incorrect, correct, and unanswered questions the user had, then shows a restart button to start the game over.
 
 The live link: https://nathanw88.github.io/TriviaGame/
+
+the background CSS was from https://leaverou.github.io/css3patterns/
