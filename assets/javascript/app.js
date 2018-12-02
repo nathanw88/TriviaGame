@@ -191,37 +191,37 @@ function newQuestion() {
     case 0:
       //setting data-answer answer 1 to right to refrence later
       $("#answer1").attr("data-answer", "right");
-      $("#answer1").text(rightAnswer);
-      $("#answer2").text(wrongAnswer1);
-      $("#answer3").text(wrongAnswer2);
-      $("#answer4").text(wrongAnswer3);
+      $("#answer1").html(rightAnswer);
+      $("#answer2").html(wrongAnswer1);
+      $("#answer3").html(wrongAnswer2);
+      $("#answer4").html(wrongAnswer3);
       break;
     case 1:
       $("#answer2").attr("data-answer", "right");
-      $("#answer1").text(wrongAnswer1);
-      $("#answer2").text(rightAnswer);
-      $("#answer3").text(wrongAnswer2);
-      $("#answer4").text(wrongAnswer3);
+      $("#answer1").html(wrongAnswer1);
+      $("#answer2").html(rightAnswer);
+      $("#answer3").html(wrongAnswer2);
+      $("#answer4").html(wrongAnswer3);
       break;
     case 2:
       $("#answer3").attr("data-answer", "right");
-      $("#answer1").text(wrongAnswer2);
-      $("#answer2").text(wrongAnswer1);
-      $("#answer3").text(rightAnswer);
-      $("#answer4").text(wrongAnswer3);
+      $("#answer1").html(wrongAnswer2);
+      $("#answer2").html(wrongAnswer1);
+      $("#answer3").html(rightAnswer);
+      $("#answer4").html(wrongAnswer3);
       break;
     case 3:
       $("#answer4").attr("data-answer", "right");
-      $("#answer1").text(wrongAnswer3);
-      $("#answer2").text(wrongAnswer1);
-      $("#answer3").text(wrongAnswer2);
-      $("#answer4").text(rightAnswer);
+      $("#answer1").html(wrongAnswer3);
+      $("#answer2").html(wrongAnswer1);
+      $("#answer3").html(wrongAnswer2);
+      $("#answer4").html(rightAnswer);
       break;
   }
   // printing timer to screen
   $("#timer").text(`Time remaining: 30`);
   //printing question to screen
-  $("#question").text(`Question: ${info.results[counter].question}`);
+  $("#question").html(`Question: ${info.results[counter].question}`);
   // if timer is not running starts it
   if (!timerRunning) {
     /*setting timmer atergar value to a variable and refrencing the timer count function
@@ -241,8 +241,9 @@ function newQuestion() {
   });
   // on click event listener to watch for click on answers
   $(".answer").on("click", function(event) {
-    // console.log("data:" + $(this).data("answer"));
-    // console.log("attr:" + $(this).attr("data-answer"));
+    console.log("data:" + $(this).data("answer"));
+    console.log();
+    console.log("attr:" + $(this).attr("data-answer"));
     // setting the answer var to capture if answer was right or wrong
     var answer = $(this).attr("data-answer");
     // console.log($(this).attr("id"));
